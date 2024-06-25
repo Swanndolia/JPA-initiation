@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DdlMappings">
+    <mapping uuid="15892356-1947-4196-9fee-ff2085efcb75" name="postgres@localhost Mapping">
+      <data-sources db="a8f168fd-8653-4389-b040-b6f63e601bc2" ddl="af722e85-422b-48e5-b00b-ede128824904" />
+    </mapping>
+  </component>
+  <component name="SqlDataSourceStorage">
+    <option name="dataSources">
+      <list>
+        <State>
+          <option name="id" value="8b9c4fdc-914b-494c-ad8b-36dd91a57841" />
+          <option name="name" value="DDL data source" />
+          <option name="dbmsName" value="POSTGRES" />
+          <option name="urls">
+            <array>
+              <option value="file://$PROJECT_DIR$/src/main/java/net/swanndolia/entity/update-schema.sql" />
+            </array>
+          </option>
+          <option name="outLayout" value="File per object by schema.groovy" />
+        </State>
+      </list>
+    </option>
+  </component>
+</project>
