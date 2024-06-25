@@ -38,7 +38,10 @@ public class IHM {
             case 3 -> sendMessageToUser(String.valueOf(searchAnimalByName(requestInputFromUser("Entrez le nom de l'animal que vous cherchez"))));
             case 4 -> sendMessageToUser(String.valueOf(searchAnimalByFoodHabits(
                     requestUserChoiceFromEnum("Séléctionnez le numéro correspondant au régime alimentaire de l'animal que vous cherchez"))));
-            case 0 -> closeEntityManager();
+            case 0 -> {
+                closeEntityManager();
+                return;
+            }
         }
         openMenu();
     }

@@ -37,7 +37,8 @@ public class DataBase {
     public static List<Animal> searchAnimalByName(String name) {
         TypedQuery<Animal> query = entityManager.createQuery("select a from Animal a where name = ?1", Animal.class);
         query.setParameter(1, name);
-        return query.getResultList();    }
+        return query.getResultList();
+    }
 
     public static List<Animal> searchAnimalByFoodHabits(FoodHabits foodHabits) {
         TypedQuery<Animal> query = entityManager.createQuery("select a from Animal a where foodHabits = ?1", Animal.class);
