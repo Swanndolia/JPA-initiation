@@ -2,7 +2,7 @@ package net.swanndolia;
 
 import java.util.Scanner;
 
-import static net.swanndolia.DataBase.*;
+import static net.swanndolia.Repository.*;
 
 public class IHM {
     private static final Scanner scanner = new Scanner(System.in);
@@ -12,7 +12,8 @@ public class IHM {
         return scanner.nextLine();
     }
 
-    public static FoodHabits requestUserChoiceFromEnum(String s) {
+    public static FoodHabits requestUserChoiceFromEnum(String message) {
+        sendMessageToUser(message);
         FoodHabits[] foodHabits = FoodHabits.values();
         for (int i = 0; i < foodHabits.length; i++) {
             sendMessageToUser(i + ": " + foodHabits[i].name());
